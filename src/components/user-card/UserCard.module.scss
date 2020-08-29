@@ -1,0 +1,84 @@
+@import "../../css/Colors.scss";
+
+
+.user-card-wrapper :global{
+  position: relative;
+  min-width: 268px;
+  min-height: 367px;
+  max-width: 300px;
+  background: $black;
+  padding: 22px;
+  .user-card{
+    .user-name{
+      font-size: 18px;
+    }
+    .user-role{
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+    }
+    .cut-1{
+      width: 20px;
+      height: 20px;
+      background: $grey;
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      transform: rotate(45deg);
+    }
+    .cut-2{
+      width: 20px;
+      height: 20px;
+      background: $grey;
+      position: absolute;
+      bottom: -10px;
+      right: -10px;
+      transform: rotate(45deg);
+    }
+    .userpic-wrapper{
+      width: 75px;
+      height: 75px;
+      margin-bottom: 20px;
+      img{
+        width: 100%;
+      }
+    }
+    .divider{
+      background: $divider;
+      margin: 0;
+    }
+    .user-details{
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      margin: 25px 0;
+      .user-birthday{
+        margin: 20px 0;
+      }
+    }
+    .user-email-wrapper{
+      margin-top: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .anticon-mail{
+        color: $login-btn;
+        font-size: 25px;
+        margin-right: 5px;
+      }
+      .anticon-delete{
+        cursor: pointer;
+        color: #888888;
+      }
+      .user-email{
+        color: #fff;
+        text-decoration: underline;
+      }
+      .delete-user{
+        background: transparent;
+        border: none;
+      }
+    }
+  }
+}
