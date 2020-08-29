@@ -7,19 +7,5 @@ export const setLoading = data =>{
     };
 };
 
-export const openNotification = data =>{
-    return{
-        type: types.OPEN_NOTIFICATION,
-        payload: data
-    };
-};
-
-export const closeNotification = data =>{
-    return{
-        type: types.CLOSE_NOTIFICATION,
-        payload: data
-    };
-};
-
 export const toggleErrorWindowIsOpen = () => ({type: types.TOGGLE_ERROR_WINDOW_IS_OPEN});
 

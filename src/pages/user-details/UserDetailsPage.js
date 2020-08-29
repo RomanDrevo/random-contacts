@@ -1,11 +1,10 @@
 import React from 'react';
 import {getSelectedUser} from '../../store/selectors';
 import {connect} from 'react-redux';
-import PageLayout from "../../components/page-layout/PageLayout";
-import {Button} from "antd";
+import PageLayout from '../../components/page-layout/PageLayout';
 import {LeftOutlined} from '@ant-design/icons';
 import style from './UserDetailsPage.module.scss';
-import {Link} from "react-router-dom";
+import {Link} from 'react-router-dom';
 
 const UserDetailsPage = ({selectedUser}) => {
 
@@ -41,7 +40,6 @@ const UserDetailsPage = ({selectedUser}) => {
                                 <h1>{selectedUser.phone}</h1>
                                 <h1 className='ml'>{selectedUser.cell},</h1>
                             </div>
-
                         </>
                 }
             </div>

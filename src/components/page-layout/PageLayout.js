@@ -2,7 +2,6 @@ import React from 'react';
 import style from './PageLayout.module.scss';
 import {Layout} from 'antd';
 
-
 const {Header, Content} = Layout;
 
 const PageLayout = ({children}) => {

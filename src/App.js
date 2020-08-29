@@ -1,5 +1,4 @@
 import React from 'react';
-import style from './css/App.scss';
 import {connect} from 'react-redux';
 import {Route, Switch} from 'react-router-dom';
 import UsersPage from './pages/users/UsersPage';
