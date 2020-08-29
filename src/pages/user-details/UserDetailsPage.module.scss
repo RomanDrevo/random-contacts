@@ -1,3 +1,12 @@
 .user-details-page-wrapper :global{
-
+  margin-top: 20px;
+  .userpic-wrapper{
+    margin-bottom: 20px;
+    img{
+      width: 100%;
+    }
+  }
+  .ml{
+    margin-left: 10px;
+  }
 }

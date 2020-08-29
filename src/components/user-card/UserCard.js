@@ -16,7 +16,7 @@ const UserCard = ({user, handleOnClick, history}) => {
 
     const onClick = () => {
         handleOnClick(user);
-        history.push(`/users/${user.id.value}${user.id.name}`)
+        history.push(`/users/${user.name.first}${user.name.last}`)
     };
 
     return (
@@ -27,10 +27,20 @@ const UserCard = ({user, handleOnClick, history}) => {
                     <img alt='userpic' src={user.picture.large}/>
                 </div>
                 <Divider className='divider'/>
-                <div className='flex'>
-                    <div className='first-name'>{user.name.first}</div>
-                    <div className='last-name'>{user.name.last}</div>
-                </div>
+                <div className='user-name'>{user.name.first}</div>
+                <div className='user-name'>{user.name.last}</div>
+                {/*<div className='user-role'>{capitalizeFirstLetter(user.Role)}</div>*/}
+                {/*<Divider className='divider'/>*/}
+                {/*<div className='cut-2'/>*/}
+                {/*<div className='user-details'>*/}
+                {/*    <div className='user-id'>ID: {user.ID}</div>*/}
+                {/*    <div className='user-birthday'>*/}
+                {/*        Birthday: {day}/{month}/{year}*/}
+                {/*    </div>*/}
+                {/*    <div className='user-address'>*/}
+                {/*        Address: {user.Address}*/}
+                {/*    </div>*/}
+                {/*</div>*/}
                 <Divider className='divider'/>
             </div>
 
