@@ -14,30 +14,10 @@ export const setUsersToStore = data =>{
   };
 };
 
-export const deleteUser = data =>{
+export const selectUser = data =>{
   return{
-    type: types.DELETE_USER,
+    type: types.SELECT_USER,
     payload: data
   };
 };
 
-export const deleteUserSuccess = data =>{
-  return{
-    type: types.DELETE_USER_SUCCESS,
-    payload: data
-  };
-};
-
-export const createUser = data =>{
-  return{
-    type: types.CREATE_USER,
-    payload: data
-  };
-};
-
-export const updateSearch = data => {
-  return {
-    type: types.UPDATE_SEARCH,
-    payload: data
-  };
-};

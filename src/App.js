@@ -7,6 +7,7 @@ import {capitalizeFirstLetter} from './utils/helpers';
 import ModalWindow from './components/modal-window/ModalWindow';
 import {getErrorObject, getIsErrorWindowOpen} from './store/selectors';
 import {toggleErrorWindowIsOpen} from './store/actions/uIStateActions';
+import UserDetailsPage from './pages/user-details/UserDetailsPage';
 
 const App = ({isErrorWindowOpen, errorObject, toggleErrorWindowIsOpen}) => {
 
@@ -15,17 +16,18 @@ const App = ({isErrorWindowOpen, errorObject, toggleErrorWindowIsOpen}) => {
     };
 
     return (
-        <div className={style['app-wrapper']}>
+        <div>
             <ModalWindow
                 visible={isErrorWindowOpen}
                 title={capitalizeFirstLetter(errorObject.title)}
                 message={errorObject.message}
                 handleErrorModalCancel={handleErrorModalCancel}
             />
+
             <div className="main-page-content">
                 <Switch>
                     <Route path='/' exact component={UsersPage}/>
-                    {/*<Route path='/users/:id' exact component={UserDetailsPage}/>*/}
+                    <Route path='/users/:id' exact component={UserDetailsPage}/>
                 </Switch>
             </div>
         </div>

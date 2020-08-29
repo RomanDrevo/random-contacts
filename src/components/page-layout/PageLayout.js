@@ -11,7 +11,6 @@ const PageLayout = ({children}) => {
             <Header className="site-layout-background" style={{padding: 0}}>
                 <h1>Contacts</h1>
             </Header>
-
             <Content style={{margin: '0 16px'}}>
                 <div className="site-layout-background" style={{padding: 24, minHeight: 360}}>
                     {children}

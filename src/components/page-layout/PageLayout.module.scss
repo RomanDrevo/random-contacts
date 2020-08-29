@@ -1,14 +1,26 @@
 @import "../../css/Colors";
 
 .page-layout-wrapper :global {
-  //max-width: 1920px;
   margin: 0 auto;
-  //height: 100vh;
   color: white;
+  .ant-layout-header{
+    display: flex;
+    justify-content: center;
+    h1{
+      color: $white!important;
+    }
+  }
   .ant-layout-sider{
     .ant-menu-item, .anticon, a {
       color: $login-btn!important;
     }
   }
+  @media only screen and (max-width: 600px) {
+    .site-layout-background{
+      padding: 0!important;
+    }
+  }
 }
+
+
 

@@ -5,7 +5,7 @@ export const getIsErrorWindowOpen = state => state?.uIStateReducer?.isErrorWindo
 export const getNotificationMessage = state => state?.uIStateReducer?.notificationMessage;
 
 export const getUsers = state => state.usersReducer?.users;
-export const getSearchText = state => state.usersReducer?.searchText;
+export const getSelectedUser = state => state.usersReducer?.selectedUser;
 
 export const getErrorObject = state => state?.alertReducer;
 
