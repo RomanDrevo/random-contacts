@@ -11,7 +11,7 @@ const UserDetailsPage = ({selectedUser}) => {
     return (
         <PageLayout>
             <div className={style['user-details-page-wrapper']}>
-                <Link to='/'><LeftOutlined /> Randomize me!</Link>
+                <Link className='back-btn' to='/'><LeftOutlined /> Randomize me!</Link>
                 {
                     !selectedUser ? <h1>No User has been selected.</h1>
                         :

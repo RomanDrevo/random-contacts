@@ -2,11 +2,16 @@
   margin-top: 20px;
   .userpic-wrapper{
     margin-bottom: 20px;
+    margin-top: 20px;
+    max-width: 150px;
     img{
       width: 100%;
     }
   }
   .ml{
     margin-left: 10px;
+  }
+  .back-btn{
+    padding: 10px;
   }
 }
