@@ -26,7 +26,6 @@ const UsersPage = (
 
     useEffect(() => {
         fetchUsers();
-        console.log(history);
     }, []);
 
     const handleOnClick = user => {
@@ -43,7 +42,7 @@ const UsersPage = (
                                 {
                                     users.map(user => (
                                         <UserCard
-                                            key={user.id.name + user.id.value}
+                                            key={user.name.first + user.id.value}
                                             user={user}
                                             handleOnClick={handleOnClick}
                                             history={history}
